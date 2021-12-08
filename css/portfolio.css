@@ -1,0 +1,440 @@
+*{
+    margin:0px;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: blue;
+}
+/* 메뉴바 주석 */
+#menu {
+    height: 100%;
+    position: fixed;
+    background-color: #FED057;
+    width: 250px;
+    transition: 1000ms all cubic-bezier(0.19, 1, 0.22, 1);
+    transform: translateX(-100%);
+    left: 60px;
+    z-index: 2;
+}
+
+#menu.expanded {
+    transform: translateX(0%);
+    left: 0px;
+}
+
+.menu-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#blob {
+    top: 0;
+    z-index: -1;
+    right: 60px;
+    transform: translateX(100%);
+    height: 100%;
+    position: absolute;
+}
+
+#blob-path {
+    height: 100%;
+    fill:  #FED057;
+}
+
+.hamburger {
+    right: 20px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-top: -10px;  
+}
+
+.hamburger .line {
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    position: absolute;
+}
+
+.hamburger .line:nth-child(2) {
+    top: 50%;
+    margin-top: -2px;
+}
+
+.hamburger .line:nth-child(3) {
+    bottom: 0;
+}
+
+h1 {
+    position: fixed;
+    right: 0;
+    margin: 0;
+} 
+
+.menu-inner-ul {
+    padding: 0;
+    list-style: none;
+    width: 80%;
+    margin-left: 15%;
+    position: absolute;
+    top: 10px;
+}
+
+.menu-inner-ul-li{
+    color: #fff;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 20px 0;
+}
+
+.pofile, .webdesign, .webpublish, .webresponsive, .mobile, .webplan {
+    display: none;
+    position: absolute;
+    left: 60px;
+
+}
+/*메인 페이지*/
+.main_content {
+    position:absolute;
+    left: 0;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    color:#457ee0;
+    text-align: center;
+    position: relative;
+    background-color: #333;
+}
+video {
+    width: 100%;
+    height: 100vh;
+}
+.main_img{
+    position: absolute;
+    top: 100px;
+    left:42%;
+}
+.main img{
+    width: 200px;
+    border-radius: 45%;
+    margin-top: 90px;
+}
+.main p{
+    font-size: 72px;
+    font-weight: bold;
+    margin:0px;
+    padding:15px;
+}
+.introduce{
+    display: flex;
+    justify-content:center;
+    height: 770px;
+    margin-top: 140px;
+}
+.box{
+    display: flex;
+    width: 43%;
+    height: 700px;
+}
+.intro{
+    width: 450px;
+    margin-top: 84px;
+    margin-left: 200px;
+}
+.box .intro .inform{
+    line-height: 22px;
+}
+.box1{
+    display: flex;
+    width: 45%;
+    height: 700px;
+}
+.boxbox{
+    width: 232px;
+    height: 200px;
+    padding:20px;
+    margin-left: 40px;
+    margin-top: 84px;
+}
+.boxbox img{
+    width: 120px;
+}
+.boxbox p{
+    margin:0px;
+    font-size: 11px;
+    line-height: 20px;
+}
+.boxbox .bold{
+    padding: 12px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    color:#457ee0;
+}
+.introduce{
+    margin-left: 20px;
+}
+.introduce .bigfont{
+    font-size: 24px;
+    font-weight: bold;
+}
+.introduce .mid{
+    font-size: 16px;
+}
+.introduce p{
+    font-size: 14px;
+    line-height: 28px;
+}
+.introduce span{
+    font-weight: bold;
+    color:#457ee0;
+}
+.introduce .bigspan{
+    font-size: 28px;
+}
+.introduce .midspan{
+    font-size: 22px;
+    font-weight: normal;
+}
+.introduce button{
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #457EE0;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #457EE0;
+    border-radius: 50px 50px 50px 50px;
+    padding: 16px 34px 16px 34px;
+}
+/* 여기부터는 웹디자인 */
+.design{
+    margin-top: 100px;
+}
+.big{
+    font-size: 24px;
+    font-weight: bold;
+    color:#457ee0;
+    margin-left: 308px;
+    margin-top: 50px;
+    width: 360px;
+}
+.container1{
+    width: 100%;
+    height: 1300px;
+    margin: 0;
+    text-align: center;
+}
+.graphic{
+    height: 1200px;
+    margin-bottom: 300px;
+    width: 80%;
+    margin: 20px 0 0 10%;
+    position: relative;
+}
+.design_menu {
+    position: absolute;
+    top:-60px;
+    left: 90%;
+}
+.graphic i{
+    color: #457EE0;
+    font-size: 25px;
+}
+.design_list {
+    display: none;
+    position: absolute;
+    left: -120px;
+    width: 150px;
+}
+.design_list ul{
+    padding: 0;
+    background-color: #457ee0;
+}
+.design_list li {
+    font-size: 15px;
+    color: white;
+}
+.ux_ui_img {
+    display: none;
+}
+.graphic img{
+    width: 250px;
+    position: absolute;
+    padding: 30px;
+}
+.graphic .img1{
+    left: 188px;
+    top: 0;
+    width: 270px;
+}
+.graphic .img2{
+    left: 498px;
+    top: 0;
+    width: 380px;
+}
+.graphic .img3{
+    left: 915px;
+    top: 0px;
+    height: 425px;
+}
+.graphic .img4{
+    left: 200px;
+    top: 345.66px;
+}
+.graphic .img5{
+    left: 508px;
+    top: 335px;
+    width: 355px;
+}
+.graphic .img6{
+    left: 915px;
+    top: 460px;
+    width: 250px;
+}
+.graphic .img7{
+    left: 188px;
+    top: 665px;
+}
+.graphic .img8{
+    left: 520px;
+    top: 585px;
+    width: 315px;
+}
+.graphic .img9{
+    left: 895px;
+    top: 750px;
+    width: 270px;
+}
+
+/* UI/UX 이미지 */
+.graphic .img1_1{
+    left: 188px;
+    top: 0;
+    width: 270px;
+}
+.graphic .img2_2{
+    left: 195px;
+    top: 435px;
+    width: 260px;
+}
+.graphic .img3_3{
+    left: 915px;
+    top: 0px;
+}
+.graphic .img4_4{
+    left: 920px;
+    top: 400px;
+    height: 440px;
+}
+.graphic .img5_5{
+    left: 498px;
+    top: 0;
+    width: 380px;
+}
+.web_design_bimg {
+    position: absolute;
+    display: none;
+    z-index: 4;
+}
+.web_design_bg {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    display: none;
+    z-index: 3;
+}
+.showedimg_div {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.showedimg_div i {
+    color: white;
+    position: absolute;
+    top: -2%;
+    right: 20%;
+
+}
+.showedimg {
+    width: 800px;
+    object-fit: cover;
+    height: auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+
+
+/* 여기부터는 웹퍼블리싱입나다~~~~ */
+.container2{
+    width: 100%;
+    height: 100%;
+}
+.publish_content{
+    width: 100%;
+    height: 100%;
+    margin-top: 80px;
+    display: flex;
+}
+.title{
+    font-size: 24px;
+    font-weight: bold;
+    color:#457ee0;
+    margin-top: 50px;
+    width: 360px;
+}
+.publish_img {
+    flex: 1;
+    margin-left: 20%;
+}
+.publish_img img{
+    width: auto;
+    height: auto;
+}
+.explain{
+    flex: 1;
+    width: 40%;
+    height: 100%;
+}
+.explain button{
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #457EE0;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #457EE0;
+    border-radius: 50px 50px 50px 50px;
+    padding: 16px 34px 16px 34px;
+}
+.list{
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+}
+.list ul{
+    margin-top:50px;
+}
+.list li{
+    margin-top: 30px;
+}
+.container2 .paper{
+    width: 1145px;
+    height: 900px;
+    margin-top: 200px;
+    margin-left: 300px;
+    border: 1px solid red;
+}
