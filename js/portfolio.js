@@ -98,6 +98,7 @@ $(window).on('load', function(){
         $(".grapic_design_img").hide();
         $(".ux_ui_img").show();
         $(".big_span").text("Web Design / UX/UI");
+        console.log("show");
     });
     
     $(".showimg").on('click', function() {
@@ -111,11 +112,95 @@ $(window).on('load', function(){
         $(".web_design_bimg").css({"top": target+100});
         $(".web_design_bimg").show();
         $(".showedimg").attr('src', $(this).attr("src"));
-    })
+    });
 
     $(".close_showedimg").on('click', function(){
         $('body').removeClass('stop-scrolling');
         $(".web_design_bg").hide();
         $(".web_design_bimg").hide();
-    })
+    });
+
+    $('#circle1').circleProgress({
+        value: 0.75,
+        size: 200,
+        startAngle: (1/2)*Math.PI,
+        thickness: 30,
+        lineCap: "round",
+        fill: {
+            gradient: ["skyblue", "black"]
+        }
+    });
+    $('#circle2').circleProgress({
+        value: 0.75,
+        size: 200,
+        startAngle: (1/2)*Math.PI,
+        thickness: 30,
+        lineCap: "round",
+        fill: {
+            gradient: ["red", "orange"]
+        }
+    });
+    $('#circle3').circleProgress({
+        value: 0.75,
+        size: 200,
+        startAngle: (1/2)*Math.PI,
+        thickness: 30,
+        lineCap: "round",
+        fill: {
+            gradient: ["blue", "skyblue"]
+        }
+    });
+    $('#circle4').circleProgress({
+        value: 0.75,
+        size: 200,
+        startAngle: (1/2)*Math.PI,
+        thickness: 30,
+        lineCap: "round",
+        fill: {
+            gradient: ["orange", "black"]
+        }
+    });
+    $('#circle5').circleProgress({
+        value: 0.75,
+        size: 200,
+        startAngle: (1/2)*Math.PI,
+        thickness: 30,
+        lineCap: "round",
+        fill: {
+            gradient: ["orange", "yellow"]
+        }
+    });
+    $('#circle6').circleProgress({
+        value: 0.75,
+        size: 200,
+        startAngle: (1/2)*Math.PI,
+        thickness: 30,
+        lineCap: "round",
+        fill: {
+            gradient: ["darkblue", "white"]
+        }
+    });
+
+    var show = true;
+
+    $(window).on("scroll", function() {
+
+        const progress = $(".ability");
+
+
+        if (($(this).scrollTop() > progress.offset().top) && show){
+            $('#circle1').circleProgress({value:0.7});
+            $('#circle2').circleProgress({value:0.7});
+            $('#circle3').circleProgress({value:0.7});
+            $('#circle4').circleProgress({value:0.7});
+            $('#circle5').circleProgress({value:0.7});
+            $('#circle6').circleProgress({value:0.7});
+            show = false;
+        }
+
+        if (($(this).scrollTop() < progress.offset().top - $(window).height()) && !show) {
+            show = true;
+        }
+    });
+
   });
