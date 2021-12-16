@@ -84,23 +84,6 @@ $(window).on('load', function(){
         $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
     });
     
-    $(".design_toggle").on('click', function() {
-        $(".design_list").toggle();
-    });
-
-    $(".grapic_design").on('click', function() {
-        $(".ux_ui_img").hide();
-        $(".grapic_design_img").show();
-        $(".big_span").text("Web Design / Graphic Design");
-    });
-
-    $(".ux_ui").on('click', function() {
-        $(".grapic_design_img").hide();
-        $(".ux_ui_img").show();
-        $(".big_span").text("Web Design / UX/UI");
-        console.log("show");
-    });
-    
     $(".showimg").on('click', function() {
 
         $('body').addClass('stop-scrolling');
@@ -120,64 +103,65 @@ $(window).on('load', function(){
         $(".web_design_bimg").hide();
     });
 
+    $(".hover_img1").mouseenter(function() {
+        $(this).attr('src', './UXUI/CGV hover.jpg'); 
+    });
+    $(".hover_img1").mouseleave(function() {
+        $(this).attr('src', './UXUI/CGV 리뉴얼.jpg'); 
+    });
+
+    $(".hover_img2").mouseenter(function() {
+        $(this).attr('src', './UXUI/손연재 hover.jpg'); 
+    });
+    $(".hover_img2").mouseleave(function() {
+        $(this).attr('src', './UXUI/손연재 리뉴얼.jpg'); 
+    });
+
+    $(".hover_img3").mouseenter(function() {
+        $(this).attr('src', './UXUI/아쿠아 hover.jpg'); 
+    });
+    $(".hover_img3").mouseleave(function() {
+        $(this).attr('src', './UXUI/아쿠아 리뉴얼.jpg'); 
+    });
+
     $('#circle1').circleProgress({
-        value: 0.75,
+        value: 0.90,
         size: 200,
         startAngle: (1/2)*Math.PI,
-        thickness: 30,
+        thickness: 20,
         lineCap: "round",
         fill: {
-            gradient: ["skyblue", "black"]
+            gradient: ["#f2bc1b", "#2a69bb"]
         }
     });
     $('#circle2').circleProgress({
-        value: 0.75,
+        value: 0.80,
         size: 200,
         startAngle: (1/2)*Math.PI,
-        thickness: 30,
+        thickness: 20,
         lineCap: "round",
         fill: {
-            gradient: ["red", "orange"]
+            gradient: ["#f2bc1b"]
         }
     });
     $('#circle3').circleProgress({
-        value: 0.75,
+        value: 0.80,
         size: 200,
         startAngle: (1/2)*Math.PI,
-        thickness: 30,
+        thickness: 20,
         lineCap: "round",
         fill: {
-            gradient: ["blue", "skyblue"]
+            gradient: ["#2a69bb"]
         }
     });
     $('#circle4').circleProgress({
-        value: 0.75,
+        value: 0.80,
         size: 200,
         startAngle: (1/2)*Math.PI,
-        thickness: 30,
+        thickness: 20,
         lineCap: "round",
         fill: {
-            gradient: ["orange", "black"]
-        }
-    });
-    $('#circle5').circleProgress({
-        value: 0.75,
-        size: 200,
-        startAngle: (1/2)*Math.PI,
-        thickness: 30,
-        lineCap: "round",
-        fill: {
-            gradient: ["orange", "yellow"]
-        }
-    });
-    $('#circle6').circleProgress({
-        value: 0.75,
-        size: 200,
-        startAngle: (1/2)*Math.PI,
-        thickness: 30,
-        lineCap: "round",
-        fill: {
-            gradient: ["darkblue", "white"]
+            gradient: ["#2a69bb", "#f2bc1b"]
         }
     });
 
@@ -186,15 +170,14 @@ $(window).on('load', function(){
     $(window).on("scroll", function() {
 
         const progress = $(".ability");
+        console.log($(this).scrollTop(), progress.offset().top, show)
 
 
-        if (($(this).scrollTop() > progress.offset().top) && show){
-            $('#circle1').circleProgress({value:0.7});
-            $('#circle2').circleProgress({value:0.7});
-            $('#circle3').circleProgress({value:0.7});
-            $('#circle4').circleProgress({value:0.7});
-            $('#circle5').circleProgress({value:0.7});
-            $('#circle6').circleProgress({value:0.7});
+        if (($(this).scrollTop() + 500> progress.offset().top) && show){
+            $('#circle1').circleProgress({value:0.9});
+            $('#circle2').circleProgress({value:0.8});
+            $('#circle3').circleProgress({value:0.8});
+            $('#circle4').circleProgress({value:0.8});
             show = false;
         }
 

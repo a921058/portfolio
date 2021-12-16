@@ -12,7 +12,7 @@ a:hover {
 #menu {
     height: 100%;
     position: fixed;
-    background-color: #FED057;
+    background-color: #F2BC1B;
     width: 300px;
     transition: 1000ms all cubic-bezier(0.19, 1, 0.22, 1);
     transform: translateX(-100%);
@@ -42,7 +42,7 @@ a:hover {
 
 #blob-path {
     height: 100%;
-    fill:  #FED057;
+    fill:#157035;
 }
 
 .hamburger {
@@ -85,7 +85,7 @@ h1 {
 }
 
 .menu-inner-ul-li{
-    color: #fff;
+    color: #12315c;
     font-size: 20px;
     font-family: sans-serif;
     padding: 20px 0;
@@ -94,42 +94,40 @@ h1 {
     padding: 0;
     list-style: none;
     width: 70%;
-    margin-left: 6%;
+    margin-left: 15%;
     position: absolute;
-    bottom: 7%;
-    border: solid 5px #457ee0;
+    bottom: 5%;
     border-radius: 50px 50px;
 }
 .menu_inner_profile_ul li {
-    text-align: center;
+    text-align: left;
     padding: 2px;
 }
 .menu_inner_profile_ul li:nth-child(odd) {
-    color: #457ee0;
-    font-size: 20px;
+    color: #12315c;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 15px;
 }
 .menu-inner i {
     position: absolute;
-    bottom: 1%;
-    left: 34%;
-    color: black;
+    bottom: 5%;
+    left: 40%;
+    color: #12315c;
+    font-size: 40px;
 }
 /*메인 페이지*/
-.main_content {
-    position:absolute;
-    left: 0;
-}
 .main{
     width: 100%;
-    height: 100vh;
-    color:#457ee0;
+    height: auto;
+    color:#2a69bb;
     text-align: center;
     position: relative;
     background-color: #333;
 }
 video {
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
 .main_img{
     position: absolute;
@@ -190,7 +188,7 @@ video {
     padding: 12px 0px;
     font-size: 20px;
     font-weight: bold;
-    color:#457ee0;
+    color:#2a69bb;
 }
 .introduce{
     margin-left: 20px;
@@ -208,10 +206,10 @@ video {
 }
 .introduce span{
     font-weight: bold;
-    color:#457ee0;
+    color: #2a69bb;
 }
-.introduce .bigspan{
-    font-size: 28px;
+.bigspan{
+    font-size: 98px;
 }
 .introduce .midspan{
     font-size: 22px;
@@ -220,10 +218,10 @@ video {
 .introduce button{
     cursor: pointer;
     color: #ffffff;
-    background-color: #457EE0;
+    background-color: #2a69bb;
     border-style: solid;
     border-width: 2px 2px 2px 2px;
-    border-color: #457EE0;
+    border-color:#2a69bb;
     border-radius: 50px 50px 50px 50px;
     padding: 16px 34px 16px 34px;
 }
@@ -233,127 +231,69 @@ video {
 }
 .container1{
     width: 100%;
-    height: 1300px;
+    height: 100%;
     margin: 0;
     text-align: center;
     position: relative;
 }
 .big{
-    font-size: 24px;
     font-weight: bold;
-    color:#457ee0;
-    margin-left: 19%;
+    color:#2a69bb;
+    margin-left: 300px;
     margin-top: 50px;
-    width: 360px;
+    text-align: left;
+    font-size: 40px;
 }
-.design_menu {
-    position: absolute;
-    top: 10px;
-    left: 78%;
+.gd1 {
+    margin-top: 5%;
 }
-.design_toggle {
-    color: #457EE0;
-    font-size: 25px;
-}
-.design_list {
-    display: none;
-    position: absolute;
-    left: -120px;
-    width: 150px;
-}
-.design_list ul{
-    padding: 0;
-    background-color: #457ee0;
-}
-.design_list li {
-    font-size: 15px;
-    color: white;
-}
-.graphic{
-    height: 1200px;
-    margin-bottom: 15%;
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 3%;
+.gd1_r {
+    display: inline-block;
     position: relative;
+    width: 400px;
+    margin-left: 5%;
 }
-.ux_ui_img {
-    display: none;
+.gd1_r img{
+    width: 100%;
+    height: auto;
 }
-.graphic img{
-    width: 250px;
+.gd1_e {
+    display: inline-block;
+    position: relative;
+    height: 500px;
+    margin-left: 5%;
+}
+.gd1_e img{
+    width: auto;
+    height: 100%;
+}
+.gd1 p {
     position: absolute;
-    padding: 30px;
+    top: -50px;
+    font-size: 20px;
+    color: #2a69bb;
 }
-.graphic .img1{
-    left: 188px;
-    top: 0;
-    width: 270px;
+.gd2 {
+    margin-top: 5%;
 }
-.graphic .img2{
-    left: 498px;
-    top: 0;
-    width: 380px;
+.gd2 div {
+    position: relative;
+    height: 800px;
+    width: auto;
+    margin-top: 10%;
 }
-.graphic .img3{
-    left: 915px;
-    top: 0px;
-    height: 425px;
+.gd2 img {
+    height: 100%;
+    width: auto;
 }
-.graphic .img4{
-    left: 200px;
-    top: 345.66px;
-}
-.graphic .img5{
-    left: 508px;
-    top: 335px;
-    width: 355px;
-}
-.graphic .img6{
-    left: 915px;
-    top: 460px;
-    width: 250px;
-}
-.graphic .img7{
-    left: 188px;
-    top: 665px;
-}
-.graphic .img8{
-    left: 520px;
-    top: 585px;
-    width: 315px;
-}
-.graphic .img9{
-    left: 895px;
-    top: 750px;
-    width: 270px;
+.gd2 p {
+    position: absolute;
+    top: -50px;
+    left: 20%;
+    font-size: 20px;
+    color: #2a69bb;
 }
 
-/* UI/UX 이미지 */
-.graphic .img1_1{
-    left: 188px;
-    top: 0;
-    width: 270px;
-}
-.graphic .img2_2{
-    left: 195px;
-    top: 435px;
-    width: 260px;
-}
-.graphic .img3_3{
-    left: 915px;
-    top: 0px;
-}
-.graphic .img4_4{
-    left: 920px;
-    top: 400px;
-    height: 440px;
-}
-.graphic .img5_5{
-    left: 498px;
-    top: 0;
-    width: 380px;
-}
 .web_design_bimg {
     position: absolute;
     display: none;
@@ -394,7 +334,92 @@ video {
     overflow: hidden;
 }
 
+/* UX / UI */
+.mozzi {
+    margin-top: 5%;
+    margin-left: 20%;
+    text-align: left;
+}
 
+.mozzi p {
+    color: #2a69bb;
+    font-size: 20px;
+}
+.mozzi_img1, .mozzi_img2 {
+    display: inline;
+    position: relative;
+}
+.mozzi_img1 img {
+    width: 40%;
+    height: auto;
+    margin-top: 5%;
+    margin-left: 3%;
+    vertical-align: top;
+}
+.mozzi_img1 p {
+    position: absolute;
+    top: 15px;
+    left: 40%;
+}
+.mozzi_img2 img {
+    width: 40%;
+    height: auto;
+    margin-top: 5%;
+    margin-left: 3%;
+    vertical-align: top;
+}
+.mozzi_img2 p {
+    position: absolute;
+    top: 15px;
+    left: 35%;
+}
+
+.ux_ui_img {
+    margin-top: 5%;
+    margin-left: 20%;
+    text-align: left;
+    position: relative;
+    height: 1200px;
+}
+.ux_ui_img p {
+    color: #2a69bb;
+    font-size: 20px;
+}
+.ux_ui_img div {
+    position: absolute;
+}
+.ux_ui_img1 {
+    top: 5%;
+    width: 45%;
+    height: auto;
+}
+.ux_ui_img1 img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.ux_ui_img2 {
+    top: 25%;
+    left: 50%;
+    width: 45%;
+    height: auto;
+}
+.ux_ui_img2 img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.ux_ui_img3 {
+    top: 50%;
+    width: 45%;
+    height: auto;
+}
+.ux_ui_img3 img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
 
 
 
@@ -415,24 +440,19 @@ video {
 .title{
     font-size: 24px;
     font-weight: bold;
-    color:#457ee0;
+    color:#2a69bb;
     width: 360px;
 }
 .publish_img {
     flex: 1;
-    margin-left: 20%;
+    margin-left: 13%;
     position: relative;
 }
 .publish_img img{
     width: auto;
     height: auto;
 }
-.publish_img iframe {
-    position: absolute;
-    left: 0;
-    width: 500px;
-    height: 100%;
-}
+
 .explain{
     flex: 1;
     width: 40%;
@@ -442,10 +462,10 @@ video {
 .explain button{
     cursor: pointer;
     color: #ffffff;
-    background-color: #457EE0;
+    background-color: #2a69bb;
     border-style: solid;
     border-width: 2px 2px 2px 2px;
-    border-color: #457EE0;
+    border-color: #2a69bb;
     border-radius: 50px 50px 50px 50px;
     padding: 16px 34px 16px 34px;
 }
@@ -477,7 +497,7 @@ video {
     justify-content: center;
 }
 .circle_pro {
-    margin: 70px;
+    margin: 35px;
     position: relative;
 }
 .circle_pro img {
@@ -488,9 +508,32 @@ video {
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
 .percent {
     position: absolute;
-    left: 90px;
+    left: 80px;
     bottom: -40px;
     font-size: 25px;
+    color: #2a69bb;
+}
+
+.lineprogress {
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-bottom: 5%;
+}
+.lineprogress div {
+    display: inline-block;
+    position: relative;
+    width: 40%;
+    margin: 20px;
+}
+.lineprogress p {
+    text-align: center;
+    font-size: 25px;
+    color: #2a69bb;
+}
+progress {
+    width: 100%;
+    height: 45px;
 }
