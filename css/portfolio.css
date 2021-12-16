@@ -373,6 +373,21 @@ video {
     top: 15px;
     left: 35%;
 }
+.mozzi_slide {
+    position: absolute;
+    top: 900px;
+    left: 220px;
+    width: 200px;
+    height: auto;
+}
+.mozzi_slide li {
+    display:none;
+    -webkit-display:block;
+}
+.mozzi_slide img {
+    width: 100%;
+    height: auto;
+}
 
 .ux_ui_img {
     margin-top: 5%;

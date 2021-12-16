@@ -131,7 +131,7 @@ $(window).on('load', function(){
         thickness: 20,
         lineCap: "round",
         fill: {
-            gradient: ["#f2bc1b", "#2a69bb"]
+            gradient: ["#f2bc1b"]
         }
     });
     $('#circle2').circleProgress({
@@ -151,7 +151,7 @@ $(window).on('load', function(){
         thickness: 20,
         lineCap: "round",
         fill: {
-            gradient: ["#2a69bb"]
+            gradient: ["#f2bc1b"]
         }
     });
     $('#circle4').circleProgress({
@@ -161,7 +161,7 @@ $(window).on('load', function(){
         thickness: 20,
         lineCap: "round",
         fill: {
-            gradient: ["#2a69bb", "#f2bc1b"]
+            gradient: ["#f2bc1b"]
         }
     });
 
@@ -170,8 +170,6 @@ $(window).on('load', function(){
     $(window).on("scroll", function() {
 
         const progress = $(".ability");
-        console.log($(this).scrollTop(), progress.offset().top, show)
-
 
         if (($(this).scrollTop() + 500> progress.offset().top) && show){
             $('#circle1').circleProgress({value:0.9});
@@ -185,5 +183,21 @@ $(window).on('load', function(){
             show = true;
         }
     });
+});
 
-  });
+imgslide();
+
+function imgslide() {
+    var val = $("#slide").attr("val");
+    var mx = $("#slide").attr("max");
+    $("#slide_img"+val).hide();
+    if(val == mx) {
+        val = 1;
+    }
+    else {
+        val++;
+    }
+    $("#slide_img"+val).fadeIn(500);
+    $("#slide").attr("val", val);
+    setTimeout('imgslide()', 3000);
+}
