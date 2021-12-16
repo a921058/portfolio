@@ -426,7 +426,7 @@ video {
 }
 .ux_ui_img1 {
     top: 50px;
-    width: 45%;
+    width: 600px;
     height: auto;
 }
 .ux_ui_img1 img{
@@ -438,7 +438,7 @@ video {
 .ux_ui_img2 {
     top: 300px;
     left: 50%;
-    width: 45%;
+    width: 600px;
     height: auto;
 }
 .ux_ui_img2 img{
@@ -448,7 +448,7 @@ video {
 }
 .ux_ui_img3 {
     top: 600px;
-    width: 45%;
+    width: 600px;
     height: auto;
 }
 .ux_ui_img3 img{
