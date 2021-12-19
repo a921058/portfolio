@@ -84,7 +84,7 @@ $(window).on('load', function(){
         $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
     });
     
-    $(".showimg").on('click', function() {
+    $(".slide_img").on('click', function() {
 
         $('body').addClass('stop-scrolling');
 
@@ -95,6 +95,7 @@ $(window).on('load', function(){
         $(".web_design_bimg").css({"top": target+100});
         $(".web_design_bimg").show();
         $(".showedimg").attr('src', $(this).attr("src"));
+        $(".slidename").html($(this).attr("src").slice(16, -4));
     });
 
     $(".close_showedimg").on('click', function(){
@@ -102,6 +103,55 @@ $(window).on('load', function(){
         $(".web_design_bg").hide();
         $(".web_design_bimg").hide();
     });
+
+    var img_list = ["./graphicdesign/가방 홈페이지 디자인.jpg",
+                    "./graphicdesign/로고제작.jpg",
+                    "./graphicdesign/삼성카드 리뉴얼.jpg",
+                    "./graphicdesign/캐릭터 드로잉.jpg",
+                    "./graphicdesign/팝업창.jpg",
+                    "./graphicdesign/팝업창2.jpg"];
+
+    var display_in = [0, 1, 2]
+    var display_out = [3, 4, 5]
+
+    $('.button_l').on('click', function() {
+        var temp = display_in.pop()
+        display_in.unshift(display_out.pop());
+        display_out.unshift(temp);
+        for(var i=0; i<3; i++) {
+            $('.gd_slide_img'+i).attr('src', img_list[display_in[i]]);
+        }
+    });
+
+    $('.button_r').on('click', function() {
+        display_out.push(display_in.shift());
+        display_in.push(display_out.shift());
+        for(var i=0; i<3; i++) {
+            $('.gd_slide_img'+i).attr('src', img_list[display_in[i]]);
+        }
+    });
+
+    $(".button_r_c").on('click', function(){
+        const now = $('.showedimg').attr('src');
+        var idx = img_list.indexOf(now);
+        var change_img = img_list[(idx + 1) % 6]
+        $('.showedimg').attr('src', change_img);
+        $(".slidename").html(change_img.slice(16, -4));
+    });
+
+    $(".button_l_c").on('click', function(){
+        const now = $('.showedimg').attr('src');
+        var idx = img_list.indexOf(now);
+        if (idx - 1 == -1){
+            idx = img_list.length;
+        }
+        var change_img = img_list[idx - 1]
+        $('.showedimg').attr('src', change_img);
+        $(".slidename").html(change_img.slice(16, -4));
+    });
+
+
+
 
     $(".hover_img1").mouseenter(function() {
         $(this).attr('src', './UXUI/CGV hover.jpg'); 
